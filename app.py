@@ -6,9 +6,9 @@ from tensorflow.keras.models import load_model
 import pickle
 
 app = Flask(__name__)
-model=load_model('model\mymodel.h5')
+model=load_model('model\model_lstm.h5')
 seq_len=3
-tokenizer = pickle.load(open('model/tokenizer2.pkl', 'rb'))
+tokenizer = pickle.load(open('model/model_tokenizer.pkl', 'rb'))
 
 
 
