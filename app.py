@@ -1,12 +1,6 @@
-from keras.preprocessing.text import Tokenizer
-import nltk
-from nltk.tokenize import word_tokenize
 from flask import Flask, render_template
 from flask.globals import request
 import os
-import numpy as np
-import re
-from keras.utils import to_categorical
 from keras.preprocessing.sequence import pad_sequences
 from tensorflow.keras.models import load_model
 import pickle
