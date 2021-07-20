@@ -8,7 +8,7 @@ import pickle
 app = Flask(__name__)
 model=load_model('model\mymodel.h5')
 seq_len=3
-tokenizer = pickle.load(open('model\tokenizer2.pkl', 'rb'))
+tokenizer = pickle.load(open('model/tokenizer2.pkl', 'rb'))
 
 
 
